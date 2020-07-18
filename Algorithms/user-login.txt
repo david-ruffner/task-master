@@ -1,0 +1,14 @@
+This document describes the process for user login
+
+---Client Side---
+1. The user types in their username/email and password and presses 'login'
+2. Is username/email length between 3 and 100 chars, and contain only valid chars (alphanumeric, dashes, underscores)?
+    a. Yes - Go on to 3.
+    b. No - Display error and repeat 2.
+3. Is the password length between 8 and 50 100 chars, and contain only valid chars (alphanumeric, dashes, underscores, !@#$%^&)
+    a. Yes - Go on to 4.
+    b. No - Repeat 3.
+4. Try to send username/password to user login endpoint
+    a. If the endpoint cannot be contacted - Display error that the login couldn't be performed at this time.
+        1. Add a line that tries to probe google/cloudflare dns. If it can't, show a message that the user looks to be offline. If it can, show a message that says the endpoint is having trouble right now.
+        

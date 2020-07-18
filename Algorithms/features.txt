@@ -1,0 +1,15 @@
+This document describes all of the main/sub features that task-master will have
+
+1. User account that stores all tasks in the cloud
+    a. Login
+    b. Account settings
+        1. Password change
+        2. Account name change
+2. Task management
+    1. CRUD ops for tasks
+    2. The ability to tag tasks by label
+    3. Tasks can have sub tasks
+3. Project management
+    1. CRUD ops for projects
+    2. The ability to tag projects by label
+    3. Projects can hold tasks and sub projects
